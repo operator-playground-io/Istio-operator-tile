@@ -16,6 +16,9 @@ The following features are supported:
 
 - The Banzai Cloud Istio operator automates the installation, upgrade, and operation of the Istio service mesh on Kubernetes. 
 - convenient high-level abstractions that enable popular use-cases for controlling, managing and securing microservices. These include automated mTLS authentication, multi-  cluster federation, canary releases, and more.
+- Istio operator simplify the deployment and lifecycle management of Istio components.
+- Using Istio operator its easy to upgrade Istio at the flip of a switch.
+- The Istio operator adds multi-cluster federation by enabling Kubernetes control planes running a remote configuration to connect to a single Istio control plane. The operator handles deployment of Istio components to remote clusters and gives a synchronization mechanism which provides access to Istio’s central components from remote clusters.
 - Istio makes it easy to create a network of deployed services with load balancing, service-to-service authentication, monitoring, and more, with few or no code changes in service code.  
 - Istio is designed for extensibility and meets diverse deployment needs.
 
