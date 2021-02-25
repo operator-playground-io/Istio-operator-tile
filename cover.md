@@ -15,8 +15,7 @@ Istio is an open platform to connect, manage, and secure microservices and it is
 The following features are supported:
 
 - The Banzai Cloud Istio operator automates the installation, upgrade, and operation of the Istio service mesh on Kubernetes. 
-- convenient high-level abstractions that enable popular use-cases for controlling, managing and securing microservices. These include automated mTLS authentication, multi-  
-  cluster federation, canary releases, and more.
+- convenient high-level abstractions that enable popular use-cases for controlling, managing and securing microservices. These include automated mTLS authentication, multi-  cluster federation, canary releases, and more.
 - Istio makes it easy to create a network of deployed services with load balancing, service-to-service authentication, monitoring, and more, with few or no code changes in service code.  
 - Istio is designed for extensibility and meets diverse deployment needs.
 
