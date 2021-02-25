@@ -5,9 +5,9 @@
 
 ### Overview:
 
-A Kubernetes Operator based on the Operator SDK for creating and managing Grafana instances.
-Grafana is an open platform for beautiful analytics and monitoring. It allows you to create dashboard visualizations of key metrics.Grafana supports a huge number of data sources.The most common use case of Grafana is displaying time series data such as memory or CPU over time, alongside the current usage data.
-Grafana runs as a process on your computer or server, and you access the interface through your browser. Your dashboard can display your data as single numbers, graphs, charts.
+Istio is an open platform to connect, manage, and secure microservices and it is emerging as the standard for building service meshes on Kubernetes. It is built out on multiple components and a rather complex deployment scheme (around 14 Helm subcharts and 50+ CRDs). Installing, upgrading and operating these components requires deep understanding of Istio and Helm (the standard/supported way of deploying Istio).
+
+The goal of the Istio-operator is to automate and simplify these and enable popular service mesh use cases (multi cluster federation, canary releases, resource reconciliation, etc) by introducing easy higher level abstractions.
 
 ### Operator's features are as follows:
 
