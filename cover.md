@@ -1,4 +1,4 @@
-<h1 align="center">Grafana Operator</h1>
+<h1 align="center">Istio Operator</h1>
 
 ![Logo](_images/logo.PNG)
 
@@ -19,7 +19,7 @@ The Operator can deploy and manage a Grafana instance on Kubernetes and OpenShif
 - Import Grafana data sources from the same namespace.
 - Install Plugins (panels).
 
-### Grafana Operator Architecture
+### Istio Operator Architecture
 
 Grafana allows you to query, visualize and understand your metrics. 
 The data was pulled from Prometheus which was plugged-in to the Grafana dashboard as a data source. Queries were fired from the dashboard with different expressions such as min, avg etc.Grafana has native Prometheus support.It comes with a large number of inbuilt reusable dashboards to bring your data together and share it.
