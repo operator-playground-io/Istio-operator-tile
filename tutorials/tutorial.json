@@ -1,0 +1,49 @@
+{
+   "name":"Grafana Operator Tutorial",
+   "appLayout":"accordion",
+   "appTheme":"g90",
+   "footer":"footer.md",
+   "tutorials":[
+      {
+         "description":"Learn how to verify that the Grafana Operator has been properly installed in the namespace.",
+         "duration":"5 min",
+         "tutorial_name":"operator-installation-verification-tutorial.md",
+         "title":"1. Grafana Operator Installation Verification"
+      },
+      {
+         "description":"Learn how to create Grafana Instance",
+         "duration":"15 min",
+         "tutorial_name":"grafana-instance-creation-tutorial.md",
+         "title":"2. Grafana Instance Creation"
+      },
+      
+      {
+         "description":"Learn how Prometheus can be used to monitor the targets/endpoints and check metrics on Grafana dashboard.",
+         "duration":"15 min",
+         "tutorial_name":"monitoring-using-prometheus-grafana.md",
+         "title":"3. Monitoring using Prometheus and Grafana"
+      },
+      
+      {
+         "description":" Learn how to configure Grafana Dashboard to check metrics.",
+         "duration":"15 min",
+         "tutorial_name":"access-grafana-dashboard-to-check-metrics.md",
+         "title":"4. Grafana Dashboard"
+      },
+      {
+         "description":"Learn how to cleanup the Operator.",
+         "duration":"10 min",
+         "tutorial_name":"cleanup.md",
+         "title":"5. Operator cleanup"
+      }
+      
+      
+   ],
+   "usefulLinks":[
+      {
+         "title":"Grafana Operator",
+         "description":"Grafana Operator ",
+         "url":"https://operatorhub.io/operator/grafana-operator"
+      }
+   ]
+}
