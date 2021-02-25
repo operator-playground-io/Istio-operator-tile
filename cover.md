@@ -5,28 +5,28 @@
 
 ### Overview:
 
-Istio is an open platform to connect, manage, and secure microservices and it is emerging as the standard for building service meshes on Kubernetes. It is built out on multiple components and a rather complex deployment scheme (around 14 Helm subcharts and 50+ CRDs). Installing, upgrading and operating these components requires deep understanding of Istio and Helm (the standard/supported way of deploying Istio).
+Istio is an open platform to connect, manage, and secure microservices and it is emerging as the standard for building service meshes on Kubernetes. It is built out on multiple components and a rather complex deployment scheme (around 14 Helm subcharts and 50+ CRDs). Installing, upgrading and operating these components requires deep understanding of Istio and Helm (the standard/supported way of deploying Istio).The goal of the Istio-operator is to automate and simplify these and enable popular service mesh use cases (multi cluster federation, canary releases, resource reconciliation, etc) by introducing easy higher level abstractions.
 
-The goal of the Istio-operator is to automate and simplify these and enable popular service mesh use cases (multi cluster federation, canary releases, resource reconciliation, etc) by introducing easy higher level abstractions.
 
 ### Operator's features are as follows:
 
-The Operator can deploy and manage a Grafana instance on Kubernetes and OpenShift. The following features are supported:
+The following features are supported:
 
-- Install Grafana to a namespace.
-- Configure Grafana through the custom resource.
-- Import Grafana dashboards from the same or other namespaces.
-- Import Grafana data sources from the same namespace.
-- Install Plugins (panels).
+- The Banzai Cloud Istio operator automates the installation, upgrade, and operation of the Istio service mesh on Kubernetes. 
+- convenient high-level abstractions that enable popular use-cases for controlling, managing and securing microservices. These include automated mTLS authentication, multi-  
+- cluster federation, canary releases, and more.
 
 ### Istio Operator Architecture
 
-Grafana allows you to query, visualize and understand your metrics. 
-The data was pulled from Prometheus which was plugged-in to the Grafana dashboard as a data source. Queries were fired from the dashboard with different expressions such as min, avg etc.Grafana has native Prometheus support.It comes with a large number of inbuilt reusable dashboards to bring your data together and share it.
+An Istio service mesh is logically split into a data plane and a control plane.
 
-A high level Prometheus & Grafana Architecture diagram is shown below :
+The data plane is composed of a set of intelligent proxies (Envoy) deployed as sidecars. These proxies mediate and control all network communication between microservices. They also collect and report telemetry on all mesh traffic.
 
-![](_images/Grafana-Architecture.png)
+The control plane manages and configures the proxies to route traffic.
+
+The following diagram shows the different components that make up each plane:
+
+![](_images/arch.png)
 
 
 
