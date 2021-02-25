@@ -10,11 +10,15 @@ Istio is an open platform to connect, manage, and secure microservices and it is
 
 ### Operator's features are as follows:
 
+
+
 The following features are supported:
 
 - The Banzai Cloud Istio operator automates the installation, upgrade, and operation of the Istio service mesh on Kubernetes. 
 - convenient high-level abstractions that enable popular use-cases for controlling, managing and securing microservices. These include automated mTLS authentication, multi-  
-- cluster federation, canary releases, and more.
+  cluster federation, canary releases, and more.
+- Istio makes it easy to create a network of deployed services with load balancing, service-to-service authentication, monitoring, and more, with few or no code changes in service code.  
+- Istio is designed for extensibility and meets diverse deployment needs.
 
 ### Istio Operator Architecture
 
@@ -34,8 +38,8 @@ The following diagram shows the different components that make up each plane:
 
 In this tutorial,we are going to cover following topics:
 
-1. Install Grafana Operator and verify its successful installation.
-2. Create Grafana Instance and verify status of pods and services.
-3. Monitoring a DB or any server using Prometheus and Grafana Operators.
-4. How to access Grafana dashboard to visualize the different metrics.
+1. Install Istio Operator and verify its successful installation.
+2. Create Istio Instance and verify status of pods and services.
+3. How to create Istio service mesh.
+4. How to create Remote member cluster.
 5. Cleanup Operator.
