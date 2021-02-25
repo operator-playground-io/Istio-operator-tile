@@ -1,1 +1,1 @@
-# Istio-operator-tile
+# Grafana Operator
