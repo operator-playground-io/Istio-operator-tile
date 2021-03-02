@@ -42,6 +42,6 @@ In this tutorial,we are going to cover following topics:
 
 1. Install Istio Operator and verify its successful installation.
 2. Create Istio Instance and verify status of pods and services.
-3. How to create Istio service mesh.
-4. How to create Remote member cluster.
-5. Cleanup Operator.
+3. Create Istio service mesh.
+4. Create Remote member cluster.
+5. Cleanup the Istio Operator.
