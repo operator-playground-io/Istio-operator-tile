@@ -84,7 +84,7 @@ You will see the following resources created:
 istio.istio.banzaicloud.io/istio-sample created
 ```
 
-**Wait till Pod STATUS is "Running", then proceed.**
+Wait till Pod STATUS is "Running", then proceed.
 
 
 **Step 3: Check the pod status.**
