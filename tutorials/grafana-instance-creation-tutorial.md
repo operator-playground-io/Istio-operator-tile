@@ -1,9 +1,9 @@
 ---
-title: Istio Instance Creation 
-description: Learn how to create instances of your Istio Operator
+title: Istio service mesh Instance Creation 
+description: Learn how to create instances of your Istio service mesh
 ---
 
-###  Create Istio Operator Instance.
+###  Create Istio service mesh
 
 **Step 1: First, create the yaml definition of the Custom Resource for Istio service mesh as below.**
 
@@ -108,78 +108,5 @@ istio-sidecar-injector-68b459ccc8-rfln8   1/1     Running   0          6m27s
 istio-telemetry-675fbccd4d-lltqd          2/2     Running   0          6m35s
 ```
 
-### Create Grafana Service of type NodePort 
 
 
-**Step 1: First, create the yaml definition as below.**
-
-```execute
-cat <<'EOF' > GrafanaService.yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: grafana-svc
-spec:
-  type: NodePort
-  ports:
-  - name: grafana
-    nodePort: 30200
-    port: 3000
-    protocol: TCP
-    targetPort: grafana-http
-  selector:
-    app: grafana
-EOF
-```
-
-**Step 2: Execute the command below to create your Grafana Service.**
-
-```execute
-kubectl create -f GrafanaService.yaml -n my-grafana-operator
-```
-
-**Step 3: Find the port for `NodePort` service using the following command.**
-
-```execute
-kubectl get svc -n my-grafana-operator
-```
-
-You will see a similar output as below:
-
-```
-NAME                       TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
-grafana-operator-metrics   ClusterIP   10.97.234.139    <none>        8080/TCP         50s
-grafana-service            ClusterIP   10.103.93.116    <none>        3000/TCP         27s
-grafana-svc                NodePort    10.101.178.187   <none>        3000:30200/TCP   3s
-```
-
-From above, we can see the output NodePort is `30200`.
-
-**Step 4: Click on http://##DNS.ip##:30200 to access your Grafana dashboard.** 
-
-
-The Grafana page will load as shown below. 
-
-![](_images/load.png)
-
-**Step 5: Now click on the Sign In button as below.**
-
-
-![](_images/signin.png)
-
-
-**Step 6: Log into Grafana dashboard with the following credentials.**
-
-```
-user: root
-password: secret
-```
-
-![](_images/login.png)
-
-The dashboard will now appear as follows.
-
-![](_images/dashboard.png)
-
-
-**Conclusion: Now we are able to access Grafana Dashboard to check monitoring metrics.**
