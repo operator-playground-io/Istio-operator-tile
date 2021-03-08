@@ -1,1 +1,1 @@
-# Grafana Operator
+# Istio Operator
