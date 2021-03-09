@@ -1,7 +1,7 @@
 {
   "title": "Istio Operator",
   "description": "Istio Operator",
-  "logo": "_images/SalesStack.png",
+  "logo": "_images/istio-logo.png",
   "enabled": true,
   "category_label": [
     "Operators"
