@@ -42,7 +42,7 @@
    "usefulLinks":[
       {
          "title":"Istio Operator",
-         "description":"Grafana Operator ",
+         "description":"Istio Operator ",
          "url":"https://operatorhub.io/operator/istio"
       }
    ]
