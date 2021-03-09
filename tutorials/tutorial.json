@@ -18,23 +18,17 @@
       },
       
       {
-         "description":"Learn how Prometheus can be used to monitor the targets/endpoints and check metrics on Grafana dashboard.",
+         "description":"Demonstrate various Istio features by deploying a sample application composed of several microservices.",
          "duration":"15 min",
-         "tutorial_name":"monitoring-using-prometheus-grafana.md",
-         "title":"3. Monitoring using Prometheus and Grafana"
+         "tutorial_name":"deploysampleapp.md",
+         "title":"3. Demonstrate various Istio features"
       },
-      
-      {
-         "description":" Learn how to configure Grafana Dashboard to check metrics.",
-         "duration":"15 min",
-         "tutorial_name":"access-grafana-dashboard-to-check-metrics.md",
-         "title":"4. Grafana Dashboard"
-      },
+     
       {
          "description":"Learn how to cleanup the Operator.",
          "duration":"10 min",
          "tutorial_name":"cleanup.md",
-         "title":"5. Operator cleanup"
+         "title":"4. Operator cleanup"
       }
       
       
