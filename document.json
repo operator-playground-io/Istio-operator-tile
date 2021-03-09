@@ -1,15 +1,15 @@
 {
-  "name": "Grafana Operator",
-  "description": "Grafana Operator",
-  "logo": "_images/grafana-logo-3.png",
+  "name": "Istio Operator",
+  "description": "Istio Operator",
+  "logo": "_images/Istio-logo.png",
   "has_supporting_content": true,
-  "stack_id": "grafana-operator",
+  "stack_id": "istio-operator",
   "type": "stack",
-  "categories": ["Monitoring"],
+  "categories": ["Monitoring","Logging & Tracing","Security"],
   "platform": "Kubernetes",
   "cover": "cover.md",
   "meta": {
-    "Monitoring": ["Grafana"],
+    "Monitoring": ["Istio"],
     "Type":[
          "Operators"
       ],
@@ -17,12 +17,12 @@
   },
 "deployment_information": {
   "Operator Project": "N/A",
-  "Deployment Namespace": "my-grafana-operator"
+  "Deployment Namespace": "operators"
 },
   "commands": [
     {
       "description": "Install Operator",
-      "exec": "kubectl create -f https://operatorhub.io/install/grafana-operator.yaml"
+      "exec": "kubectl create -f https://operatorhub.io/install/istio.yaml"
     }
   ],
   "display": [
