@@ -1,13 +1,13 @@
 {
-  "title": "Grafana Operator",
-  "description": "Grafana Operator",
+  "title": "Istio Operator",
+  "description": "Istio Operator",
   "logo": "_images/SalesStack.png",
   "enabled": true,
   "category_label": [
     "Operators"
   ],
   "document": "data-logging-stack",
-  "stack_id": "grafana-operator",
+  "stack_id": "istio-operator",
   "type": "stack",
   "categories": [
     "Monitoring"
@@ -16,8 +16,8 @@
   "has_support": true,
   "has_dataset": false,
   "has_api": false,
-  "git_url": "https://github.com/operator-playground-io/Grafana-Operator-Playground-tile.git",
-  "git_commit": "f9b0629c0e8ab30212329dd3bede171564c698b6",
+  "git_url": "https://github.com/operator-playground-io/Istio-operator-tile.git",
+  "git_commit": "42a5b9db5c246ed9733c0f128e0de2afa75b7a7d",
   "installTime": "5 minutes",
   "isStacksSaved": true
 }
