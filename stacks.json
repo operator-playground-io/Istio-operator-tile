@@ -17,7 +17,7 @@
   "has_dataset": false,
   "has_api": false,
   "git_url": "https://github.com/operator-playground-io/Istio-operator-tile.git",
-  "git_commit": "694149b4fd45bf9e89c202769bec4e8fcd06e346",
+  "git_commit": "cf64e861e941c892a48f5cfd79a27654c8f04398",
   "installTime": "5 minutes",
   "isStacksSaved": true
 }
