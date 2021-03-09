@@ -1,20 +1,20 @@
 {
-   "name":"Grafana Operator Tutorial",
+   "name":"Istio Operator Tutorial",
    "appLayout":"accordion",
    "appTheme":"g90",
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":"Learn how to verify that the Grafana Operator has been properly installed in the namespace.",
+         "description":"Learn how to verify that the Istio Operator has been properly installed in the namespace.",
          "duration":"5 min",
          "tutorial_name":"operator-installation-verification-tutorial.md",
-         "title":"1. Grafana Operator Installation Verification"
+         "title":"1. Istio Operator Installation Verification"
       },
       {
-         "description":"Learn how to create Grafana Instance",
+         "description":"Learn how to create Istio Instance",
          "duration":"15 min",
-         "tutorial_name":"grafana-instance-creation-tutorial.md",
-         "title":"2. Grafana Instance Creation"
+         "tutorial_name":"istio-instance-creation-tutorial.md",
+         "title":"2. Istio Instance Creation"
       },
       
       {
@@ -41,9 +41,9 @@
    ],
    "usefulLinks":[
       {
-         "title":"Grafana Operator",
+         "title":"Istio Operator",
          "description":"Grafana Operator ",
-         "url":"https://operatorhub.io/operator/grafana-operator"
+         "url":"https://operatorhub.io/operator/istio"
       }
    ]
 }
